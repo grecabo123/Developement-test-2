@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "image": "image/end to end rcm.jpeg",
+        "text": "Take your first step toward <br /> regaining your clinical focus."
+    },
+    {
+        "id": "2",
+        "image":"image/consulting.jpeg",
+        "text": "Does your Revenue Cycle need a <br /> fresh perspective?"
+    },
+    {
+        "id": "3",
+        "image":"image/insurance ar.jpg",
+        "text": "Scale and speed up your <br /> claims resolution."
+    },
+    {
+        "id": "4",
+        "image":"image/credentialing.jpg",
+        "text":"Need to get credentialed or <br /> contracted with a payor?"
+    },
+    {
+        "id": "5",
+        "image":"image/denial management.jpeg",
+        "text":"Improve reimbursement with <br /> denial tracking and prevention."
+    },
+    {
+        "id": "6",
+        "image":"image/coding.jpg",
+        "text":"Want accurate and proper <br /> reimbursement?"
+    }
+]

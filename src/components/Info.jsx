@@ -1,10 +1,5 @@
 import React from 'react'
-import img1 from '../assets/end to end rcm.jpeg'
-import img2 from '../assets/consulting.jpeg';
-import img3 from '../assets/insurance ar.jpg';
-import img4 from '../assets/credentialing.jpg';
-import img5 from '../assets/denial management.jpeg';
-import img6 from '../assets/coding.jpg';
+import Demands from '../json/Demands.json';
 import img7 from '../assets/corvista health.jpg';
 import img8 from '../assets/stratify genomics.jpeg';
 import img9 from '../assets/vhsosfl.jpeg';
@@ -32,72 +27,23 @@ function Info() {
                     <div className="box-img">
                         <div className="center">
                             <div className="row">
-                                <div className="col-lg-6 col-sm-12 mb-3 col-md-12">
-                                    <div className="box-content-img">
-                                        <center><a href="/"><img src={img1} alt="Logo" /></a></center>
-                                        <div className="mt-3">
-                                            <center><span className='text-info-box text-secondary'>Take your first step toward <br /> regaining your clinical focus.</span></center>
-                                        </div>
-                                        <div className="mt-3">
-                                            <center><span className='learn'>Learn More</span></center>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-sm-12 mb-3 col-md-12">
-                                    <div className="box-content-img">
-                                        <center><a href="/"><img src={img2} alt="" /></a></center>
-                                        <div className="mt-3">
-                                            <center><span className='text-secondary text-info-box'>Does your Revenue Cycle need a <br /> fresh perspective?</span></center>
-                                        </div>
-                                        <div className="mt-3">
-                                            <center><span className='learn'>Learn More</span></center>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-sm-12 mb-3 col-md-12">
-                                    <div className="box-content-img">
-                                        <center><a href="/"><img src={img3} alt="" /></a></center>
-                                        <div className="mt-3">
-                                            <center><span className='text-secondary text-info-box'>Scale and speed up your <br /> claims resolution.</span></center>
-                                        </div>
-                                        <div className="mt-3">
-                                            <center><span className='learn'>Learn More</span></center>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-sm-12 mb-3 col-md-12">
-                                    <div className="box-content-img">
-                                        <center><a href="/"><img src={img4} alt="" /></a></center>
-                                        <div className="mt-3">
-                                            <center><span className='text-secondary text-info-box'>Need to get credentialed or <br /> contracted with a payor?</span></center>
-                                        </div>
-                                        <div className="mt-3">
-                                            <center><span className='learn'>Learn More</span></center>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-sm-12 mb-3 col-md-12">
-                                    <div className="box-content-img">
-                                        <center><a href="/"><img src={img5} alt="" /></a></center>
-                                        <div className="mt-3">
-                                            <center><span className='text-secondary text-info-box'>Improve reimbursement with <br /> denial tracking and prevention.</span></center>
-                                        </div>
-                                        <div className="mt-3">
-                                            <center><span className='learn'>Learn More</span></center>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-sm-12 mb-3 col-md-12">
-                                    <div className="box-content-img">
-                                        <center><a href="/"><img src={img6} alt="" /></a></center>
-                                        <div className="mt-3">
-                                            <center><span className='text-secondary text-info-box'>Want accurate and proper <br /> reimbursement?</span></center>
-                                        </div>
-                                        <div className="mt-3">
-                                            <center><span className='learn'>Learn More</span></center>
-                                        </div>
-                                    </div>
-                                </div>
+                                {
+                                    Demands.map((data, idx) => {
+                                        return (
+                                            <div className="col-lg-6 col-sm-12 mb-3 col-md-12">
+                                                <div className="box-content-img">
+                                                    <center><a href="/"><img src={data.image} alt="Logo" /></a></center>
+                                                    <div className="mt-3">
+                                                        <center><div className='text-info-box text-secondary' dangerouslySetInnerHTML={{__html: data.text}} /></center>
+                                                    </div>
+                                                    <div className="mt-3">
+                                                        <center><span className='learn'>Learn More</span></center>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )
+                                    })
+                                }
                             </div>
                         </div>
                     </div>

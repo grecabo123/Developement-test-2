@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "image": "image/discovery.jpg",
+        "text": "Learn current workflows and processes. Identify key objectives and goals. Define the scope of the project."
+    },
+    {
+        "id": "2",
+        "image":"image/strategy.jpg",
+        "text": "Identify gaps and opportunities. Create, modify billing policies, SOP’s and workflows"
+    },
+    {
+        "id": "3",
+        "image":"image/implementation.jpg",
+        "text": "Provide needed training on updated policies. Deploy new processes into production environment"
+    },
+    {
+        "id": "4",
+        "image":"image/maintenance.jpg",
+        "text":"Evaluate results from implemented changes. Generate reports to track and measure outcomes"
+    }
+]
